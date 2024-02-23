@@ -63,7 +63,7 @@ body {
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: #4169e1;
+  background-color: #D04848;
   color: var(--text-color);
 }
 
@@ -155,7 +155,7 @@ img {
 @media screen and (max-width: 767px) {
   .nav-menu {
     position: fixed;
-    background-color: #4169e1;
+    background-color: #D04848;
     top: -100%;
     left: 0;
     width: 100%;
@@ -204,7 +204,7 @@ img {
 }
 
 .scroll-header {
-  background-color: #4169e1
+  background-color: #D04848
   ;
 }
 
