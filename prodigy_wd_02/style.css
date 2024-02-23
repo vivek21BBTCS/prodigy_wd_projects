@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #000;
+    font-family: 'Poppins', sans-serif;
+}
+
+.stopwatch {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow:
+          0 0 0 1.5em #f34769,
+          0 0 0 2.5em #3fb8f4;
+        margin: 4em;
+        padding: 1em;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    font-size: 36px;
+    line-height: 200px;
+    color: #fff;
+    position: relative;
+}
+
+.time {
+    font-size: 32px;
+    margin: 20px 0;
+    color: #333;
+}
+
+#startStop,
+#lap {
+    margin: 0 10px;
+}
+
+.laps-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.laps-list li {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #333;
+}
+
+.circle {
+    animation: rotate 12s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 396px) {
+    #startStop,
+    #lap {
+        margin: 0;
+    }
+    #startStop,
+    #reset,
+    #lap {
+        display: block;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .circle {
+        width: 150px;
+        height: 150px;
+        font-size: 24px;
+        line-height: 150px;
+    }
+    .time {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .circle {
+        width: 180px;
+        height: 180px;
+        font-size: 30px;
+        line-height: 180px;
+    }
+    .time {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .circle {
+        width: 200px;
+        height: 200px;
+        font-size: 36px;
+        line-height: 200px;
+    }
+    .time {
+        font-size: 32px;
+    }
+}
